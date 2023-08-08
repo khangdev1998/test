@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Inter", sans-serif;
+}
+.top {
+  text-align: center;
+  color: #3a3a3a;
+  position: relative;
+  z-index: -2;
+}
+.font-text {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: calc(57 / 48);
+  z-index: 99;
+}
+.caption {
+  color: #3a3a3a;
+}
+.heading {
+  margin: 5px auto 0 auto;
+  padding: 8px 16px;
+  width: fit-content;
+  border-radius: 8px;
+  color: #ffff;
+  background: #7c0fd1;
+}
+.wrap {
+  position: relative;
+}
+.top-group {
+  width: 78%;
+  margin: auto;
+}
+.top-city {
+  position: absolute;
+  bottom: -58%;
+  left: 0;
+  width: 100%;
+}
+.big-image {
+  max-width: 100%;
+  width: 100%;
+  z-index: 9899;
+  position: relative;
+}
+.background {
+  position: relative;
+  margin-top: -10%;
+}
+.background .button {
+  position: absolute;
+  left: 50%;
+  bottom: 6rem;
+  transform: translateX(-50%);
+  z-index: 9999;
+  width: 696px;
+  padding: 41.244px 68.741px;
+  display: inline-block;
+  border-radius: 13.748px;
+  background: var(
+    --gradient-button,
+    linear-gradient(130deg, #ffa318 0%, #f6851c 48.44%, #f31f10 100%)
+  );
+  box-shadow: 0px 0px 13.748148918151855px 0px #f5851e;
+  text-decoration: none;
+  color: var(--text-black-4, #f7f7f7);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 130%;
+  transition: all 0.2s linear;
+  -webkit-animation: shakeBtn 2s linear infinite 2.5s;
+  animation: shakeBtn 2s linear infinite 2.5s;
+  overflow: hidden;
+  position: relative;
+}
+.background .button::before {
+  content: "";
+  position: absolute;
+  top: -50%; 
+  left: -150%;
+  width: 100%;
+  height: 200%; 
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); 
+  transform: skewX(-45deg); 
+  animation: lightSweep 3s infinite 3s; 
+}
+@keyframes lightSweep {
+  0% {
+    left: -150%;
+  }
+  50% {
+    left: 150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+@keyframes shakeBtn {
+  0%,
+  40% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  10%,
+  30% {
+    transform: translateX(-50%) rotate(-5deg);
+  }
+  20% {
+    transform: translateX(-50%) rotate(5deg);
+  }
+  50%,
+  100% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+.background .button:hover {
+  filter: brightness(1.2);
+}
+.background .button span:nth-child(2) {
+  color: var(--primary-mona-digital-main, #7c0fd1);
+}
+.background .button span {
+  display: block;
+}
